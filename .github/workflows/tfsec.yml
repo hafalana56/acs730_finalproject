@@ -18,7 +18,7 @@ jobs:
         uses: tfsec/tfsec-sarif-action@master
         with:
           sarif_file: tfsec.sarif
-          working_directory: /acs730_finalproject
+          working_directory: /Prod
 
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
