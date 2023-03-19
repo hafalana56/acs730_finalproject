@@ -60,7 +60,7 @@ variable "desired_capacity" {
 
 variable "your_bucket_name" {
   type    = string
-  default = "group0bucket1"
+  default = "group0bucket2"
 }
 variable "aws_ssh_key_pair" {
   type        = string
