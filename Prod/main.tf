@@ -62,7 +62,6 @@ module "asg" {
   instance_ami     = data.aws_ami.latest_amazon_linux.id
   key_name         = module.Group0_key.key_name
   desired_capacity = var.desired_capacity
-  members          = module.globalvars.members
   default_tags     = module.globalvars.default_tags
   common_name      = local.common_name
   bucket_name      = var.your_bucket_name
