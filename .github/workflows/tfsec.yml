@@ -1,4 +1,4 @@
-name: TFSec Analysis
+name: TFSec 
 on:
   push:
     branches:
@@ -14,11 +14,11 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@master
 
-      - name: tfsec
-        uses: tfsec/tfsec-sarif-action@master
+      - name: run report
+        uses: aquasecurity/tfsec-sarif-action@v0.1.0
         with:
           sarif_file: tfsec.sarif
-          working_directory: Prod
+          
 
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
