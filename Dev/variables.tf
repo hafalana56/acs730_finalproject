@@ -10,7 +10,7 @@ variable "default_tags" {
 variable "prefix" {
   type        = string
   default     = "Group0"
-  description = "Name prefix"
+  description = "prefix"
 }
 
 variable "public_subnet_cidrs" {
