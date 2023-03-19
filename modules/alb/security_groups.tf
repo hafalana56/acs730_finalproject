@@ -7,7 +7,7 @@ resource "aws_security_group" "scg_lb" {
     from_port   = 0
     to_port     = 0
     protocol    = -1
-    cidr_blocks = ["0.0.0.0/0"] #tfsec:ignore:aws-ec2-no-public-egress-sgr
+    cidr_blocks = ["0.0.0.0/0"] 
   }
 
   ingress {
@@ -15,7 +15,7 @@ resource "aws_security_group" "scg_lb" {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] #tfsec:ignore:aws-ec2-no-public-ingress-sgr
+    cidr_blocks = ["0.0.0.0/0"] 
   }
 
   ingress {
